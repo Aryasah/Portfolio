@@ -1,0 +1,77 @@
+{% extends 'home/base.html' %}
+
+{% block title %}About{% endblock title %}
+
+{% block header %}
+        <div class="menu-btn">
+            <span class="menu-btn__burger">
+            </span>
+        </div>
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu_nav_item">
+                    <a href="/" class="menu_nav_link">Home</a>
+                </li>
+                <li class="menu_nav_item">
+                    <a href="/about" class="menu_nav_link">About Me</a>
+                </li>
+                <li class="menu_nav_item">
+                    <a href="/projects" class="menu_nav_link">My Projects</a>
+                </li>
+                <li class="menu_nav_item active">
+                    <a href="/contact" class="menu_nav_link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+{% endblock header %}
+
+{% block content %}
+        <div class="overlay">
+            
+        </div>
+        <section class="contacts">
+           <h2>Let Get in Touch</h2>
+
+           <div class="contact_list">
+               <div>
+                    <div class="contact_email">
+                        <i class="fa fa-envelope"></i> Email
+                    </div>
+                    <div class="text-secondary">
+                        aryasah30@gmail.com
+                    </div>
+               </div>
+               <div>
+                    <div class="contact_phone">
+                        <i class="fa fa-phone"></i> Phone 
+                    </div>
+                    <div class="text-secondary">
+                        +91 9123045078
+                    </div>
+               </div>
+               <div>
+                    <div class="contact_phone">
+                        <i class="fa fa-marker-alt"></i> Address 
+                    </div>
+                    <div class="text-secondary">
+                        18/1 Ishwar Dutta Lane, Howrah-711101
+                    </div>
+               </div>
+               
+           </div>
+            <div class="social_icons">
+                <a href="#">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-github fa-2x"></i>
+                </a>
+            </div>
+        </section>
+{% endblock content %}

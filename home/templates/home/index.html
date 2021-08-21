@@ -1,0 +1,56 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block header %}
+        <div class="menu-btn">
+        <span class="menu-btn__burger">
+        </span>
+        </div>
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu_nav_item active">
+                    <a href="/" class="menu_nav_link">Home</a>
+                </li>
+                <li class="menu_nav_item">
+                    <a href="/about" class="menu_nav_link">About Me</a>
+                </li>
+                <li class="menu_nav_item">
+                    <a href="/projects" class="menu_nav_link">My Projects</a>
+                </li>
+                <li class="menu_nav_item">
+                    <a href="/contact" class="menu_nav_link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+{% endblock header %}
+
+{% block content %}
+        <div class="overlay">    
+        </div>
+        <section class="home">
+            <h2>Hii My Name is</h2>
+            <h2 class="home_name">
+                Arya <span class="home_name_last">
+                    Sah
+                </span>
+            </h2>
+            <h2>
+                Web developer, Designer, Competetive Programmer.
+            </h2>
+            <div class="social_icons">
+                <a href="#">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-github fa-2x"></i>
+                </a>
+            </div>
+        </section>
+{% endblock content %}

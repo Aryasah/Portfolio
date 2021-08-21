@@ -1,0 +1,134 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}Projects{% endblock title %}
+
+{% block header %}
+        <div class="menu-btn">
+            <span class="menu-btn__burger">
+            </span>
+        </div>
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu_nav_item">
+                    <a href="/" class="menu_nav_link">Home</a>
+                </li>
+                <li class="menu_nav_item">
+                    <a href="/about" class="menu_nav_link">About Me</a>
+                </li>
+                <li class="menu_nav_item active">
+                    <a href="/projects" class="menu_nav_link">My Projects</a>
+                </li>
+                <li class="menu_nav_item">
+                    <a href="/contact" class="menu_nav_link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+{% endblock header %}
+
+{% block content %}
+        <section class="projects">
+            <div class="projects_bio-image">
+                <!-- <div class="overlay">
+            
+                </div> -->
+                <h2 class="text-secondary">
+                    My Projects
+                </h2>
+            </div>
+            <div class="projects-items">
+                <div class="projects_item">
+                    <img src="{% static '/img/project-1.jpg' %}" alt="First Project">
+                    <div class="projects_btns">
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-eye"></i>
+                            Preview
+                        </a>
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="projects_item">
+                    <img src="{% static '/img/project-2.jpg' %}" alt="First Project">
+                    <div class="projects_btns">
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-eye"></i>
+                            Preview
+                        </a>
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="projects_item">
+                    <img src="{% static '/img/project-3.jpg' %}" alt="First Project">
+                    <div class="projects_btns">
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-eye"></i>
+                            Preview
+                        </a>
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="projects_item">
+                    <img src="{% static '/img/project-4.jpg' %}" alt="First Project">
+                    <div class="projects_btns">
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-eye"></i>
+                            Preview
+                        </a>
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="projects_item">
+                    <img src="{% static '/img/project-5.jpg' %}" alt="First Project">
+                    <div class="projects_btns">
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-eye"></i>
+                            Preview
+                        </a>
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="projects_item">
+                    <img src="{% static '/img/project-6.jpg' %}" alt="First Project">
+                    <div class="projects_btns">
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-eye"></i>
+                            Preview
+                        </a>
+                        <a href="#" class="projects_btn">
+                            <i class="fa fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="social_icons">
+                <a href="#">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-github fa-2x"></i>
+                </a>
+            </div>
+        </section>
+{% endblock content %}
